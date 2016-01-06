@@ -22,8 +22,7 @@ struct Edge
     { }
 };
 
-// This struct is used in Part 2 of the lab -- it basically stores
-// info about one "hop" during the BFS. It allows us to track
+// This basically stores info about one "hop" during the BFS. It allows us to track
 // which edges are visited along the way
 struct PathPair
 {
@@ -69,7 +68,6 @@ struct ActorNode
     std::list<Edge*> mEdges;
     
     // This list is used to track the path during a BFS
-    // (For implementing Part 2)
     std::list<PathPair> mPath;
     
     // This bool is used to track whether or not the node was visited
