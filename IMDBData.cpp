@@ -1,9 +1,4 @@
-// ITP 365 Fall 2015
-// HW7 - IMDB Search
-// Name: Johnathan Mai
-// Email: johnathm@usc.edu
-// Platform: Mac
-//
+
 // IDMBData.cpp - Implements IMDBData interface
 
 #include "IMDBData.h"
@@ -11,7 +6,6 @@
 #include <iostream>
 #include <queue>
 
-// Do for Part 1
 // Function: Default Constructor
 // Purpose: Loads in the actor/movie file specified,
 // and populates the data into the appropriate hash maps.
@@ -50,7 +44,6 @@ IMDBData::IMDBData(const std::string& fileName)
     
 }
 
-// Do for Part 1
 // Function: reverseMap
 // Purpose: This is a helper function that is used to generate
 // the reverse map (movies to actors)
@@ -71,7 +64,6 @@ void IMDBData::reverseMap(const std::string& actorName, const std::vector<std::s
     }
 }
 
-// Do for Part 1
 // Function: getMoviesFromActor
 // Purpose: Given an actor's name, returns a vector containing their movies
 // Input: Name of actor (by reference)
@@ -88,7 +80,6 @@ std::vector<std::string>& IMDBData::getMoviesFromActor(const std::string& actorN
     }
 }
 
-// Do for Part 1
 // Function: getActorsFromMovie
 // Purpose: Given a movie's name, returns the name of its actors
 // Input: Name of movie (by reference)
@@ -105,7 +96,6 @@ std::vector<std::string>& IMDBData::getActorsFromMovie(const std::string& movieN
     }
 }
 
-// Do for Part 2
 // Function: findRelationship
 // Purpose: Tries to find a relationship between two actors, using a BFS
 // and outputs (to cout) the result of the search.
@@ -182,7 +172,6 @@ void IMDBData::findRelationship(const std::string& fromActor, const std::string&
 	mGraph.clearVisited();
 }
 
-// For Part 2
 // Function: createGraph
 // Purpose: This helper function constructs the IMDBGraph from the movie to actors map
 // Input: None
@@ -210,6 +199,4 @@ void IMDBData::createGraph()
 	}
 }
 
-// Leave here! Do not edit!!! Use in part 1
-// DO NOT REMOVE THIS LINE
 std::vector<std::string> IMDBData::sEmptyVector;
